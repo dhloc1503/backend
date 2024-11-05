@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize';
 
-const db = new Sequelize('postgres://lndata:123123@localhost:5433/lndata')
+const db = new Sequelize(process.env.DB)
 
 export { db }
